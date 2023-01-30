@@ -139,8 +139,11 @@
             "name": "[parameters('appServicePlanName')]",
             "location": "[resourceGroup().location]",
             "sku": {
-                "name": "Y1",
-                "tier": "Dynamic"
+                "name": "P1v2",
+                "tier": "Premiumv2",
+                "size": "P1v2",
+                "family": "Pv2",
+                "capacity: 1
             },
             "properties": {
                 "name": "[parameters('appServicePlanName')]",
